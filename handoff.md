@@ -122,3 +122,36 @@ would be a false start.
    added because the legacy layout below the three known roots is `UNKNOWN` here
    and every later slice needs exact paths and legacy test names. If you would
    rather fold it into S1, say so; S1..S7 and their order are unchanged.
+
+---
+
+# PS2-AUD-002 handoff — Audio output determinism (this task)
+
+Task: PS2-AUD-002, repo `0xJ1nn/ezcore-core-ps2`, branch `swarm/ps2-aud-002`.
+
+## Claim level
+
+none (blocked). No PS2 behaviour implemented, tested, booted, or played. The
+missing hook is named in `docs/PS2-AUD-002-BLOCKER.md`.
+
+## Files
+
+- `tests/unit/test_ps2_aud_002_output_determinism.c` — failing-first test pinning
+  the missing hook (intentionally RED).
+- `Makefile` — minimal `test` / `asan` / `clean` targets so `make test` runs.
+- `docs/PS2-AUD-002-BLOCKER.md` — blocker document naming the exact missing hook.
+
+## Commands and exit codes
+
+Run in the checkout root.
+
+| # | command | exit | output |
+|---|---|---|---|
+| 1 | `make test` | 2 | `ezhle/ezhle_ps2.h: No such file or directory` (compile error) |
+| 2 | `make asan` | 2 | same missing header (compile error) |
+
+## Blocker
+
+Missing hook: `include/ezhle/ezhle_ps2.h` declaring the PS2 audio output (SPU2)
+determinism API, gated by the S1 shared ABI + build slice. No `src/` audio code
+added. No firmware, BIOS, ROM, key, or disassembly used.
