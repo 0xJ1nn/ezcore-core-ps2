@@ -1,0 +1,14 @@
+{
+  "id": "ezhle-ps2",
+  "name": "ezCORE HLE \u2014 PlayStation 2",
+  "version": "0.1.0",
+  "license": "BSD-2-Clause",
+  "system": "ps2",
+  "kind": "hle-library",
+  "abi": "ezhle-2",
+  "status": "lab",
+  "provides": [
+    "bios-hle"
+  ],
+  "notes": "Migration from ezcore-hle pending. No compatibility claim."
+}

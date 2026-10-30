@@ -1,0 +1,15 @@
+ezCORE HLE — PlayStation 2
+Copyright (c) 2026 ezCORE contributors. BSD-2-Clause.
+
+This repository is a clean-room high-level implementation of documented
+behaviour. It contains no first-party firmware, BIOS image, ROM, key, or
+disassembly.
+
+Documentation sources are recorded in `docs/SOURCES.md`. Public documentation
+is used as a specification reference only; no text or code is copied into this
+repository. Platform and company names are trademarks of their owners; this
+project is not affiliated with or endorsed by them.
+
+Provided "as is", without warranty of any kind. This is an emulator component,
+not a complete emulator, and it makes no compatibility claim for any commercial
+title.
