@@ -1,7 +1,7 @@
 # PS2-BIO-009 handoff — Alarms / cache ops / TLB helpers (BLOCKER)
 
 Task: PS2-BIO-009, `0xJ1nn/ezcore-core-ps2`, branch `swarm/ps2-bio-009`.
-Base: `f8b6e70` (migration slice plan). Head commit: `400b88cbc744846833438c6f758612ec06bbf090`.
+Base: `f8b6e70` (migration slice plan). Head commit: `16094ea27718d30bc478ec6209f58259129ccbb6`.
 Nothing pushed, merged, or opened as a PR.
 
 ## Claim level
