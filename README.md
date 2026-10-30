@@ -25,6 +25,12 @@ bash scripts/gate.sh
 
 Board and roles: https://github.com/0xJ1nn/ezcore-hle
 
+## Migration
+
+The PS2 HLE code is being moved here slice by slice. Plan and rules:
+`MIGRATION.md`. Slice status table: `docs/SLICES.md`. The build commands above are
+created by slice S1 and do not exist yet.
+
 ## License
 
 BSD-2-Clause. See `LICENSE` and `NOTICE`.
