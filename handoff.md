@@ -122,3 +122,41 @@ would be a false start.
    added because the legacy layout below the three known roots is `UNKNOWN` here
    and every later slice needs exact paths and legacy test names. If you would
    rather fold it into S1, say so; S1..S7 and their order are unchanged.
+
+---
+
+# PS2-CPU-004 handoff — TLB helpers (planned)
+
+Task: PS2-CPU-004, `0xJ1nn/ezcore-core-ps2`, branch `swarm/ps2-cpu-004`.
+
+## Claim level
+
+`docs` — a planned interface document. No PS2 behaviour is implemented,
+tested, booted, or played. No compatibility claim.
+
+## Files
+
+Modified:
+- `docs/SOURCES.md` — registered source S2 (ps2tek, Tier 1) for EE/COP0/TLB
+  facts.
+- `docs/PS2-CPU-004-TLB-HELPERS-PLANNED.md` — new. Planned TLB helper
+  interface: inputs, outputs, units, error behaviour, save-state fields, and an
+  explicit 15-item UNKNOWN list. Every hardware claim cites S2.
+
+No code, tests, or build files were added (none exist yet in this migration
+state).
+
+## Commands and exit codes
+
+Run in `/Users/0xj1n/Projects/ezcore-hle-work/.worktrees/PS2-CPU-004`.
+
+1. `git status` / `ls docs` (exploration) — exit code: 0
+2. `git add docs/SOURCES.md docs/PS2-CPU-004-TLB-HELPERS-PLANNED.md`
+   exit code: 0
+3. `git commit -m "docs(ps2): PS2-CPU-004 TLB helpers planned interface"`
+   exit code: 0 (commit `c8407fd`)
+4. `git log --oneline -3` — exit code: 0
+
+No build/test commands exist for this slice (migration S1 not landed); the
+repository has no `Makefile` or `scripts/gate.sh` yet, so none were run.
+Nothing was pushed, merged, or opened as a PR.
