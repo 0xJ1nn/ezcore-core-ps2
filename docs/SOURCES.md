@@ -15,6 +15,7 @@ Record the source tier before writing code.
 | ID | Source | Tier | Used for | Notes |
 |---|---|---|---|---|
 | S1 | _add the first public source_ | 1 | _scope_ | _citation URL_ |
+| S2 | ps2tek — "Documentation on PS2 internals" (psi-rockin.github.io/ps2tek), Emotion Engine / COP0 / TLB sections | 1 | EE TLB entry format, COP0 Index/Random/EntryLo0/1/PageMask/Wired/EntryHi, page sizes, exception codes, scratchpad bit | https://psi-rockin.github.io/ps2tek/ |
 
 ## Forbidden
 
