@@ -28,8 +28,10 @@ Board and roles: https://github.com/0xJ1nn/ezcore-hle
 ## Migration
 
 The PS2 HLE code is being moved here slice by slice. Plan and rules:
-`MIGRATION.md`. Slice status table: `docs/SLICES.md`. The build commands above are
-created by slice S1 and do not exist yet.
+`MIGRATION.md`. Slice status table: `docs/SLICES.md`. `make test` and `make asan`
+currently build the CP0 exception and INTC unit tests that arrived with
+PS2-CPU-003; `scripts/gate.sh`, the rest of the build, and the packaging targets
+are still created by slice S1 and do not exist yet.
 
 ## License
 

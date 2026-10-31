@@ -14,7 +14,13 @@ Record the source tier before writing code.
 
 | ID | Source | Tier | Used for | Notes |
 |---|---|---|---|---|
-| S1 | _add the first public source_ | 1 | _scope_ | _citation URL_ |
+| S1 | MIPS IV instruction set architecture, public architecture manual | 0 | CP0 register numbers, Status/Cause field layout, exception code numbers, exception vector addresses, EPC/BD/BadVaddr entry rules, reset state, interrupt delivery gating | cited by document name only; no URL recorded in this checkout |
+| S2 | Public EE hardware overview (Emotion Engine core and interrupt controller) | 1 | INTC_STAT (0x00) / INTC_MASK (0x10) offsets, INTC_STAT write-one-to-clear, eleven interrupt sources, controller output on core interrupt line 2 | cited by document name only; per-field confidence noted in `include/ezhle/ps2_cp0.h` and `include/ezhle/ps2_intc.h` |
+
+Source ids share the `S` prefix with the migration slice ids in
+`docs/SLICES.md`; the two namespaces are separate. Slice S1, for example, is the
+build slice, not the MIPS manual.
+
 
 ## Forbidden
 
